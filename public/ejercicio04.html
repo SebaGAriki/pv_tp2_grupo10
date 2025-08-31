@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Universitario</title>
+    <link rel="stylesheet" href="../src/ejercicio04/ejercicio.css">
+</head>
+<body>
+    <h2>Datos Universitarios</h2>
+    
+    <form id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Ingrese su nombre"><br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" placeholder="Ingrese su apellido"><br><br>
+
+        <label for="libreta">Libreta Universitaria:</label>
+        <input type="text" id="libreta" placeholder="APU999999"><br><br>
+
+        <button type="button" onclick="mostrarDatos()">Mostrar Datos</button>
+    </form>
+
+    <!-- OJO: como el HTML está en /public y el JS en /src/ejercicio04 -->
+    <script src="../src/ejercicio04/ejercicio04.js"></script>
+</body>
+</html>
