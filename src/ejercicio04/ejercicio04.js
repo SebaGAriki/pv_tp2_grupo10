@@ -5,3 +5,6 @@ function mostrarDatos() {
 
     alert(`Los datos ingresados son: Nombre: ${nombre} Apellido: ${apellido} Libreta Universitaria: ${libreta}`);
 }
+
+<input type="text" id="nombre" placeholder="Ingrese su nombre" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]+" required>
+<input type="text" id="apellido" placeholder="Ingrese su apellido" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]+" required></input>
