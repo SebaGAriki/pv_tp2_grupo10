@@ -1,0 +1,36 @@
+.body{
+    
+    justify-content: center;
+
+}
+.header{
+    justify-items: center;
+    grid-area: header;
+    border: 1px blue solid;
+    
+}
+
+.section-formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 
+    ". header ."
+    ". formulario ."
+    ". boton .";
+     border: 1px red solid;
+    
+     
+}
+
+.formulario{
+    grid-area: formulario;
+    justify-items: center;
+}
+
+.boton{
+    grid-area: boton;
+  
+}
+
