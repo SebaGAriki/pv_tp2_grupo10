@@ -1,7 +1,7 @@
 document.getElementById("botonCalcular").addEventListener("click", function(){
   let entrada = document.getElementById("inputCadena").value;
   let resultado = reemplazarSignos(entrada);
-  alert("Resultado: " + resultado);
+  alert(resultado);
 });
 
 function reemplazarSignos(cadena){
@@ -24,9 +24,11 @@ function reemplazarSignos(cadena){
 
       let suma = izquierda + derecha;
       nuevaCadena.push(suma.toString()); // toString(): Transforma un valor (como un número, booleano, etc.) en una cadena de texto
+    }else if(actual === " " || isNaN(actual) || actual === "5" || actual === "6" || actual === "7" || actual === "8" || actual === "9"){ // isNaN(): evalúa si un valor no puede convertirse en un número (si es una letra no podra)
+      return "Cadena inválida";
     }else{
       nuevaCadena.push(actual); // push: Inserta un nuevo valor al final del array
     }
   }
-  return nuevaCadena.join(""); // join: Une todos los elementos de un array en una sola cadena, usando un separador
+  return "Resultado: " + nuevaCadena.join(""); // join: Une todos los elementos de un array en una sola cadena, usando un separador
 }
