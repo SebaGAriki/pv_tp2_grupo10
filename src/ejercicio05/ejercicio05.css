@@ -1,0 +1,32 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    border: 2px red solid;
+}
+.titulos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.seccion-formulario {
+    display: flex;
+    flex-direction: column;
+    border: 1px blue solid;
+    height: 300px;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    border: 1px green solid;
+    width: 200px;
+    
+}
