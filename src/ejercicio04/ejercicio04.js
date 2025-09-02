@@ -1,10 +1,21 @@
 function mostrarDatos() {
-    const nombre = document.getElementById("nombre").value;
-    const apellido = document.getElementById("apellido").value;
-    const libreta = document.getElementById("libreta").value;
+    let nombre = document.getElementById("nombre").value;
+    let apellido = document.getElementById("apellido").value;
+    let libreta = document.getElementById("libreta").value;
 
-    alert(`Los datos ingresados son: Nombre: ${nombre} Apellido: ${apellido} Libreta Universitaria: ${libreta}`);
+    let soloLetras = /^[A-Za-zÁÉÍÓÚáéíóúñÑ ]+$/;
+
+    if (!soloLetras.test(nombre)) {
+        alert("El nombre solo puede contener letras.");
+        return;
+    }
+
+    if (!soloLetras.test(apellido)) {
+        alert("El apellido solo puede contener letras.");
+        return;
+    }
+
+    alert("Los datos ingresados son: Nombre: " + nombre +
+          " Apellido: " + apellido +
+          " Libreta Universitaria: " + libreta);
 }
-
-<input type="text" id="nombre" placeholder="Ingrese su nombre" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]+" required>
-<input type="text" id="apellido" placeholder="Ingrese su apellido" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]+" required></input>
